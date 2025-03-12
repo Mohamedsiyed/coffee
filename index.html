@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">   
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
     <title>coffee</title>
 </head>
@@ -18,7 +19,11 @@
                     <img src="img/sign (1).png">
                 </a>
             </div>
+
             <div class="main-head">
+                <div class="remove-container">
+                    <i class="fa-solid fa-xmark remove-item"></i>
+                </div>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>   
                 <a href="#menu">Menu</a>
@@ -27,11 +32,27 @@
                 <a href="#contact">Contact</a>
                 <a href="#blogs">Blogs</a>
             </div>
-            <div class="btn-head">
-               <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-               <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="icon-head">
+               <a href="#menu"><i class="fa-solid fa-magnifying-glass"></i></a>
+               <a href="#menu"><i class="fa-solid fa-cart-shopping"></i></a>
+               <a href="#home"><i class="fa-solid fa-bars"></i></a>
             </div>
         </nav>
+        <div class="searsh-form" >
+            <input type="search" id="search" placeholder="search here">
+             <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="container-cart">
+            <div class="remove-container">
+                <i class="fa-solid fa-xmark remove-item"></i>
+            </div>
+            <div class="img-cart">
+                <img src="img2/add-to-cart.png" >
+           </div>
+            <div class="btn-cart">
+               <button>Checkout Now</button>
+            </div>
+        </div>
     </header>
     <section class="home" id="home">
         <div class="main-home">
@@ -62,25 +83,25 @@
     <section class="menu" id="menu">
         <h2>OUR<span>MENU</span></h2>
         <div class="content-menu">
-            <div class="box-menu">
+            <div class="box-menu" >
                 <div class="img-box-menu">
                     <img src="img2/images__1_-removebg-preview.png">
                 </div>
                 <div class="des-box-menu">
                     <h2>Frappuccino</h2>
-                    <h3>10$<span>15$</span></h3>
+                    <h3>10.00$<span>15.00$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
                 </div>
             </div>
-            <div class="box-menu">
+            <div class="box-menu" >
                 <div class="img-box-menu">
                     <img src="img2/download__1_-removebg-preview.png">
                 </div>
                 <div class="des-box-menu">
                     <h2>Frappuccino</h2>
-                    <h3>5$<span>7$</span></h3>
+                    <h3>5.99$<span>7.99$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
@@ -92,55 +113,55 @@
                 </div>
                 <div class="des-box-menu">
                     <h2>Flat White </h2>
-                    <h3>4$<span>8$</span></h3>
+                    <h3>4.99$<span>8.99$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
                 </div>
             </div>
-            <div class="box-menu">
+            <div class="box-menu" >
                 <div class="img-box-menu">
                     <img src="img2/images__5_-removebg-preview.png">
                 </div>
                 <div class="des-box-menu">
                     <h2>Iced Coffee</h2>
-                    <h3>15$<span>18$</span></h3>
+                    <h3>15.99$<span>18.99$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
                 </div>
             </div>
-            <div class="box-menu">
+            <div class="box-menu" >
                 <div class="img-box-menu">
                     <img src="img2/download-removebg-preview.png">
                 </div>
                 <div class="des-box-menu">
                     <h2>Mocha </h2>
-                    <h3>5.5$<span>7$</span></h3>
+                    <h3>5.5$<span>7.99$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
                 </div>
             </div>
-            <div class="box-menu">
+            <div class="box-menu" >
                 <div class="img-box-menu">
                     <img src="img2/images__3_-removebg-preview.png">
                 </div>
                 <div class="des-box-menu">
                     <h2>Macchiato</h2>
-                    <h3>8$<span>10$</span></h3>
+                    <h3>8.99$<span>10.99$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
                 </div>
             </div>
-            <div class="box-menu">
+            <div class="box-menu" >
                 <div class="img-box-menu">
                     <img src="img2/images__2_-removebg-preview.png">
                 </div>
                 <div class="des-box-menu">
                     <h2>Latte</h2>
-                    <h3>10$<span>12%</span></h3>
+                    <h3>10.99$<span>12.99$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
@@ -152,19 +173,19 @@
                 </div>
                 <div class="des-box-menu">
                     <h2>Espresso</h2>
-                    <h3> $6.50<span>10%</span></h3>
+                    <h3> 6.50$<span>10.99$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
                 </div>
             </div>
-            <div class="box-menu">
+            <div class="box-menu" >
                 <div class="img-box-menu">
                     <img src="img2/images__6_-removebg-preview.png">
                 </div>
                 <div class="des-box-menu">
                     <h2>Black Coffee</h2>
-                    <h3>5$<span>6$</span></h3>
+                    <h3>5.99$<span>6.99$</span></h3>
                 </div>
                 <div class="btn-box-menu">
                     <button>add to cart</button>
@@ -331,11 +352,12 @@
                 <div class="des-box-blogs">
                     <h2>tasty and refreshing coffee </h2>
                     <h3>by admin/ 1st may. 2021</h3>
-                    <p> tasty and refreshing coffee dsaascxbb lbnm trrtg  gfhnbvc</p>
+                    <p> tasty and refreshing coffee dsaascxbb lbnm trrtg  gfhnbvc by admin/ 1st may. 2021</p>
+                    <div class="btn-box-blogs">
+                        <button>Read More</button>
+                    </div>
                 </div>
-                <div class="btn-box-blogs">
-                    <button>Read More</button>
-                </div>
+
             </div>
             <div class="box-blogs">
                 <div class="img-box-blogs">
@@ -344,11 +366,12 @@
                 <div class="des-box-blogs">
                     <h2>tasty and refreshing coffee </h2>
                     <h3>by admin/ 1st may. 2021</h3>
-                    <p> tasty and refreshing coffee dsaascxbb lbnm trrtg  gfhnbvc</p>
+                    <p> tasty and refreshing coffee dsaascxbb lbnm trrtg  gfhnbvc by admin/ 1st may. 2021</p>
+                    <div class="btn-box-blogs">
+                        <button>Read More</button>
+                    </div>
                 </div>
-                <div class="btn-box-blogs">
-                    <button>Read More</button>
-                </div>
+
             </div>
             <div class="box-blogs">
                 <div class="img-box-blogs">
@@ -357,10 +380,10 @@
                 <div class="des-box-blogs">
                     <h2>tasty and refreshing coffee </h2>
                     <h3>by admin/ 1st may. 2021</h3>
-                    <p> tasty and refreshing coffee dsaascxbb lbnm trrtg  gfhnbvc</p>
-                </div>
-                <div class="btn-box-blogs">
-                    <button>Read More</button>
+                    <p> tasty and refreshing coffee dsaascxbb lbnm trrtg  gfhnbvc by admin/ 1st may. 2021</p>
+                    <div class="btn-box-blogs">
+                        <button>Read More</button>
+                    </div>
                 </div>
             </div>
         </div>
